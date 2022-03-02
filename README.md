@@ -4,3 +4,6 @@ This is just a data dump of personal notes as I go through these examples and re
 - https://gobyexample.com/
 - https://www.youtube.com/watch?v=YS4e4q9oBaU&t=3392s
 - https://go.dev/doc/effective_go
+
+### Other resources and readings to look into
+- https://go.dev/blog/slices-intro
