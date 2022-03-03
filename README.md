@@ -7,3 +7,10 @@ This is just a data dump of personal notes as I go through these examples and re
 
 ### Other resources and readings to look into
 - https://go.dev/blog/slices-intro
+
+
+### Questions to ask
+- How to import external packages and create your packages
+
+### Other notes
+Capitalize variables are outside the package scope, but that is also true for functions. This is one way to write external functionality
