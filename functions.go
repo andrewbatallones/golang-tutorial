@@ -31,6 +31,15 @@ func sum(nums ...int) int {
 	return total
 }
 
+// Go supports recursions
+func fact(n int) int {
+	if n == 0 {
+		return 1
+	}
+
+	return n * fact(n-1)
+}
+
 func main() {
 	fmt.Println(plus(1, 2))
 	fmt.Println(plusPlus(1, 2, 3))

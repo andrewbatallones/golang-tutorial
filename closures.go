@@ -25,4 +25,17 @@ func main() {
 
 	newInts := intSeq()
 	fmt.Println(newInts())
+
+	// Closures can be recursive too, but will need to be declared beforehand with a var
+	var fib func(n int) int
+
+	fib = func(n int) int {
+		if n < 2 {
+			return n
+		}
+
+		return fib(n-1) + fib(n-2)
+	}
+
+	fmt.Println(fib(7))
 }
