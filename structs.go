@@ -20,7 +20,7 @@ func (r *rect) area() int {
 }
 
 func (r rect) perim() int {
-	return r.width + r.height
+	return 2*r.width + 2*r.height
 }
 
 func newPerson(name string) *person {
