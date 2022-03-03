@@ -4,7 +4,7 @@ import "fmt"
 
 // Go supports points
 // If you want a good explination, I would suggest this video: https://www.youtube.com/watch?v=DTxHyVn0ODg&t=645s
-// * dereferences the pointer
+// * dereferences the pointer, as well as signifies it is a pointer
 // & gets the memory address of the value
 func zeroval(ival int) {
 	ival = 0
