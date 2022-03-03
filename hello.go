@@ -28,6 +28,10 @@ const global string = "global constant"
 // Shadowing: variable with the same name, but one at outer scope, other inner scope
 var shadow string = "hi"
 
+func testFunc() (int, bool) {
+	return 1, true
+}
+
 // Entrance for any app
 func main() {
 	const local float64 = 5000 // If you need more control
@@ -72,6 +76,12 @@ func main() {
 		if j%2 == 0 {
 			fmt.Println(j)
 		}
+	}
+
+	// If Statemnt
+	// You can do this "deconstruction assignment and the variables will be only inside the if block"
+	if val, ok := testFunc(); ok {
+		fmt.Println(val)
 	}
 
 	// Switch Statements
