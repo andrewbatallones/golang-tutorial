@@ -11,6 +11,7 @@ This is just a data dump of personal notes as I go through these examples and re
 
 ### Questions to ask
 - How to import external packages and create your packages
+- Find out what type assertion is
 
 ### Other notes
 Capitalize variables are outside the package scope, but that is also true for functions. This is one way to write external functionality
