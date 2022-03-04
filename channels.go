@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 // Channels
 // How concurrent thread connects to goroutines
@@ -29,4 +32,17 @@ func main() {
 	fmt.Println(<-bMsg)
 	// You need to follow the buffered limit or run into a deadlock issue
 	// fmt.Println(<-bMsg)
+
+	// Channel Synchronization
+	done := make(chan bool, 1)
+
+	go func(done chan bool) {
+		fmt.Print("working...")
+		time.Sleep(time.Second)
+		fmt.Println("done with channel")
+
+		done <- true
+	}(done)
+
+	<-done
 }
