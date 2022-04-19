@@ -1,4 +1,4 @@
-package main
+package sections
 
 import (
 	"fmt"
@@ -17,7 +17,7 @@ func headers(w http.ResponseWriter, req *http.Request) {
 	}
 }
 
-func main() {
+func Server() {
 	http.HandleFunc("/hello", hello)
 	http.HandleFunc("/headers", headers)
 
