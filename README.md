@@ -15,4 +15,5 @@ This is just a data dump of personal notes as I go through these examples and re
 - Find out what type assertion is
 
 ### Other notes
-Capitalize variables are outside the package scope, but that is also true for functions. This is one way to write external functionality
+- Capitalize variables are outside the package scope, but that is also true for functions. This is one way to write external functionality
+- look into godoc package https://pkg.go.dev/golang.org/x/tools/cmd/godoc for web serving
