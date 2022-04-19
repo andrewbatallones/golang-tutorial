@@ -11,6 +11,7 @@ This is just a data dump of personal notes as I go through these examples and re
 
 ### Questions to ask
 - How to import external packages and create your packages
+    - A crucial part of importing packages is having the mod.go (think of it as a package.json or Ruby Gemfile). It will keep track of information on your package. You can then use that to have nested packages and import them to other packages as needed.
 - Find out what type assertion is
 
 ### Other notes
