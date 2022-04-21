@@ -1,7 +1,11 @@
 package main
 
-import "github.com/andrewbatallones/golang-tutorial/sections"
+import (
+	"github.com/andrewbatallones/golang-tutorial/sandbox"
+	// "github.com/andrewbatallones/golang-tutorial/sections"
+)
 
 func main() {
-	sections.Arrays()
+	// sections.Mutex()
+	sandbox.Mutex()
 }
