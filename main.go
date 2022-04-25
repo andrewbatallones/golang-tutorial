@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	// sections.Mutex()
-	// sandbox.Mutex()
-	sections.WaitGrouops()
+	// sections.WaitGrouops()
+	sections.RaitLimit()
 }
