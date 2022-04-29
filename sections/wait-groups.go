@@ -6,13 +6,6 @@ import (
 	"time"
 )
 
-func worker(id int) {
-	fmt.Printf("Worker %d starting\n", id)
-
-	time.Sleep(time.Second)
-	fmt.Printf("Worker %d done\n", id)
-}
-
 // Things to note
 // if you want to pass the waitgroup, pass by reference
 func WaitGrouops() {
@@ -28,7 +21,7 @@ func WaitGrouops() {
 		// can learn more on this from Closures
 		go func() {
 			defer wg.Done()
-			worker(i)
+			waitWorker(i)
 		}()
 	}
 
@@ -36,4 +29,12 @@ func WaitGrouops() {
 	wg.Wait()
 
 	fmt.Println("All workers done.")
+}
+
+// Private methods
+func waitWorker(id int) {
+	fmt.Printf("Worker %d starting\n", id)
+
+	time.Sleep(time.Second)
+	fmt.Printf("Worker %d done\n", id)
 }

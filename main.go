@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
-	// sections.WaitGrouops()
-	sections.RaitLimit()
+	// sections.Mutex()
+	// sandbox.Mutex()
+	sections.Tickers()
 }
