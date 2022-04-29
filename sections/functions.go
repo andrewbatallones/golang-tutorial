@@ -2,7 +2,19 @@ package sections
 
 import "fmt"
 
-// Functions
+func Functions() {
+	fmt.Println(plus(1, 2))
+	fmt.Println(plusPlus(1, 2, 3))
+
+	_, val := checkPairEven(3, 4)
+	fmt.Println("second value: ", val)
+
+	fmt.Println(sum(1, 2, 3, 4, 5))
+
+	fmt.Println(fact(10))
+}
+
+// Private Methods
 // You must specify the data types of parameters
 // if they are the same, you can omit the data types (except for the last one)
 // You must have a return statement (does not return last expression)
@@ -38,14 +50,4 @@ func fact(n int) int {
 	}
 
 	return n * fact(n-1)
-}
-
-func Functions() {
-	fmt.Println(plus(1, 2))
-	fmt.Println(plusPlus(1, 2, 3))
-
-	_, val := checkPairEven(3, 4)
-	fmt.Println("second value: ", val)
-
-	fmt.Println(sum(1, 2, 3, 4, 5))
 }
