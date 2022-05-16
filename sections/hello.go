@@ -28,11 +28,6 @@ const global string = "global constant"
 // Shadowing: variable with the same name, but one at outer scope, other inner scope
 var shadow string = "hi"
 
-func testFunc() (int, bool) {
-	return 1, true
-}
-
-// Entrance for any app
 func Hello() {
 	const local float64 = 5000 // If you need more control
 
@@ -57,6 +52,7 @@ func Hello() {
 	fmt.Println(text)
 	fmt.Println(one)
 	fmt.Println(math.Sin(local))
+	fmt.Println(global)
 	fmt.Println(shadow)
 
 	// For Loops
@@ -91,4 +87,9 @@ func Hello() {
 	default:
 		fmt.Println("Its a weekday...")
 	}
+}
+
+// Private methods
+func testFunc() (int, bool) {
+	return 1, true
 }

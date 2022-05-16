@@ -6,7 +6,5 @@ import (
 )
 
 func main() {
-	// sections.Mutex()
-	// sandbox.Mutex()
-	sections.Tickers()
+	sections.AtomicCounters()
 }
